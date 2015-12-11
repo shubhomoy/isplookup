@@ -44,31 +44,7 @@
 			}
 		});
 	</script>
-	<script type="text/javascript">
-		window.fbAsyncInit = function() {
-		    FB.init({
-		        appId      : '1477353092546419',
-		        xfbml      : true,
-		        version    : 'v2.1'
-		    });
-		};
 
-		(function(d, s, id){
-		    var js, fjs = d.getElementsByTagName(s)[0];
-		    if (d.getElementById(id)) {return;}
-		    js = d.createElement(s); js.id = id;
-		    js.src = "//connect.facebook.net/en_US/sdk.js";
-		    fjs.parentNode.insertBefore(js, fjs);
-		}(document, 'script', 'facebook-jssdk'));
-	</script>
-	<script type="text/javascript">
-		function share() {
-			FB.ui({
-				method: 'share',
-				href: document.getElementById('share_loc').value,
-			}, function(response){});
-		}
-	</script>
 </head>
 <body ng-app="app">
 	<div class="container" ng-controller="mainCtrl">
